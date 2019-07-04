@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Python button script
+        </title>
+    </head>
+    <body>
+
+        <button onclick="location.href='{% url 'requesting' %}'">Execute Script</button> <hr>
+        {% if Aset %}
+        {% for i in Aset %}
+            {{i | safe }}
+            <hr>
+        {% endfor %}
+        {% endif %}
+
+        </body>
+</html>
